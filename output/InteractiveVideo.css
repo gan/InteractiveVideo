@@ -1,0 +1,36 @@
+#myVideo {
+	width : 627px;
+	height : 450px;
+	border:1px black solid;
+}
+#section1 {
+	position:absolute;
+	margin-top:10px;
+	margin-left:10px;
+}
+#section2 {
+	position:absolute;
+	margin-top:100px;
+	margin-left:50%;
+}
+#Canvas2{
+	position:absolute;
+	left: 230px;
+	top: 311px;
+	width: 187px;
+	height: 34px;
+}
+#Canvas1{
+	position:absolute;
+	left: 425px;
+	top: 147px;
+	width: 123px;
+	height: 55px;
+}
+#Canvas0{
+	position:absolute;
+	left: 96px;
+	top: 147px;
+	width: 142px;
+	height: 55px;
+}

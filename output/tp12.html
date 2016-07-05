@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <link rel="stylesheet" href="InteractiveVideo.css">
+    </head>
+    <body> 
+<section id="section1">
+    <hgroup>
+      <h1>Simple MPEG-DASH Streaming player</h1>
+    </hgroup>
+
+    <label>.mpd file location:
+      <input type="text" id="filename" value="01_Dishonored2_dash.mpd" />
+    </label>
+    <button id="load">Play</button>
+    <button id="choose">Stop load</button>
+
+    <!-- some areas to display info and content -->
+    <span id="Span1"><a href="01_Dishonored2_dash.mpd" target="_blank">The <em>MPD</em> document used</a></span>
+        
+    <span id="myspan"><br /></span>
+    <div id="curInfo"></div>
+      <h3>Current values:</h3>
+      <ul>
+          <li>Index: <span id="curIndex"></span> of <span id="numIndexes"></span></li>
+          <li>Segment length: <span id="segLength"></span></li>
+          <li>Video time: <span id="curTime"></span></li>
+       </ul>
+   </section>
+  <section id="section2">
+      <video id="myVideo" autoplay="autoplay" poster="" controls>No video available</video>
+      <br />
+        This example uses HTML5 video, Media Source Extensions, mp4, and MPEG-DASH files.
+      <br />
+      <canvas id="Canvas0">
+      </canvas>
+      <canvas id="Canvas1">
+      </canvas>
+      <canvas id="Canvas2">
+      </canvas>
+      <p id="demo"></p>
+      <p id="time"></p>
+      <br>
+  </section>
+
+      <script type="text/javascript" src="InteractiveVideo-Segment-base.js"></script>
+      <script type="text/javascript" src="InteractiveVideo-Segment.js"></script>
+      <script type="text/javascript" src="InteractiveVideo-Interaction.js"></script>
+    </body> 
+</html>

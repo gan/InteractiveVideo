@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<scene>
+<video height="450" stream="myvideo.mp4" width="627">
+<chapter start="52"/>
+<chapter start="88"/>
+<chapter start="139"/>
+</video>
+<canvases>
+<canvas id="Canvas0">
+<rectangle pos="96 147" size="142 55"/>
+</canvas>
+<canvas id="Canvas1">
+<rectangle pos="425 147" size="123 55"/>
+</canvas>
+<canvas id="Canvas2">
+<rectangle pos="230 311" size="187 34"/>
+</canvas>
+</canvases>
+<menus>
+<menu end="55" id="Menu0" loop="true" menuNum="1" start="44">
+<mbutton actionArg="FreezeTimer" canvas="Canvas2" type="goto"/>
+<mbutton actionArg="RatBomb" canvas="Canvas0" type="goto"/>
+<mbutton actionArg="DaggerAttack" canvas="Canvas1" type="goto"/>
+</menu>
+<menu end="88" id="Menu1" loop="true" menuNum="2" start="75">
+<mbutton actionArg="RatBomb" canvas="Canvas1" type="goto"/>
+<mbutton actionArg="DaggerAttack" canvas="Canvas0" type="goto"/>
+<mbutton actionArg="FreezeTimer" canvas="Canvas2" type="goto"/>
+</menu>
+</menus>
+<actions>
+<action goto="52" id="DaggerAttack"/>
+<action goto="88" id="FreezeTimer"/>
+<action goto="139" id="RatBomb"/>
+</actions>
+</scene>
